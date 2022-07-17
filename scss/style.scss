@@ -1,0 +1,72 @@
+@import "_null";
+
+img {
+   display: block;
+   max-width: 100%;
+}
+
+.inner {
+   max-width: 1300px;
+   margin: 0 auto;
+   padding: 0px 25px;
+}
+
+.header {
+   margin: 30px 0px;
+
+   .inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .menu {
+         //navigation
+         display: flex;
+         gap: 38px;
+         a {
+            text-transform: uppercase;
+            color: #000000;
+
+            &:hover {
+               text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+               transition: 0.4s;
+            }
+         }
+
+         &__link:nth-child(2) {
+            //arrow
+            a {
+               display: flex;
+               align-items: center;
+               position: relative;
+               .arrow-img {
+                  padding-left: 7px;
+                  img {
+                     transition: 0.1s;
+                     &.active {
+                        transform: rotate(-180deg);
+                     }
+                  }
+               }
+            }
+         }
+
+         .sub-menu {
+            display: none;
+            position: absolute;
+            &.open {
+               display: block;
+            }
+            &__link {
+               margin-top: 10px;
+               font-size: 13px;
+            }
+         }
+      }
+   }
+
+   &__buttons {
+      display: flex;
+      gap: 15px;
+   }
+}
