@@ -5,3 +5,16 @@ menuLink.addEventListener('click', function () {
    subMenu.classList.toggle('open');
    arrow.classList.toggle('active');
 });
+
+let popupBtn = document.querySelector('.popupBtn');
+let popup = document.querySelector('.popup')
+let popupClose = document.querySelector('.popup__close')
+
+popupBtn.addEventListener('click', function () {
+   popup.classList.add('open');
+})
+
+popupClose.addEventListener('click', function () {
+   popup.classList.remove('open');
+})
+

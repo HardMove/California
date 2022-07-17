@@ -155,9 +155,9 @@ img {
 }
 
 .header .inner .menu__link:nth-child(2) a .arrow-img img {
-  -webkit-transition: 0.1s;
-  -o-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .header .inner .menu__link:nth-child(2) a .arrow-img img.active {
@@ -167,17 +167,32 @@ img {
 }
 
 .header .inner .menu .sub-menu {
-  display: none;
   position: absolute;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  max-height: 0;
+  display: block;
+  opacity: 0;
+  background-color: #000000;
+  border-radius: 3px;
+  margin-top: 5px;
 }
 
 .header .inner .menu .sub-menu.open {
   display: block;
+  max-height: 100px;
+  opacity: 1;
 }
 
 .header .inner .menu .sub-menu__link {
-  margin-top: 10px;
+  margin: 10px 10px 10px 3px;
   font-size: 13px;
+  color: white;
+}
+
+.header .inner .menu .sub-menu__link:hover {
+  color: #a3a3a3;
 }
 
 .header__buttons {
@@ -185,4 +200,71 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
+}
+
+.header__buttons .search {
+  border: #000000 1px solid;
+  padding-left: 3px;
+}
+
+.header .popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000000d5;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header .popup__body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 10px;
+}
+
+.header .popup__content {
+  background-color: white;
+  max-width: 800px;
+  padding-right: 150px;
+  padding-left: 9px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.header .popup__close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 20px;
+  color: #000;
+}
+
+.header .popup__title {
+  font-family: "Readex Pro", sans-serif;
+  font-size: 25px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.header .popup__text ul li {
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+.header .popup.open {
+  opacity: 1;
+  visibility: visible;
 }
