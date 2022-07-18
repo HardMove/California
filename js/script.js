@@ -18,3 +18,14 @@ popupClose.addEventListener('click', function () {
    popup.classList.remove('open');
 })
 
+document.addEventListener('keydown', function (e) {
+   if (e.code == 'Escape') {
+      popup.classList.remove('open');
+   }
+})
+
+let burgerBtn = document.querySelector(".header__burger");
+let navMenu = document.getElementById("nav");
+burgerBtn.addEventListener("click", function () {
+   navMenu.classList.toggle("active")
+});
