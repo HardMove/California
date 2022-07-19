@@ -98,3 +98,14 @@ h6 {
    font-size: inherit;
    font-weight: 400;
 }
+
+img {
+   display: block;
+   max-width: 100%;
+}
+
+.inner {
+   max-width: 1300px;
+   margin: 0 auto;
+   padding: 0px 25px;
+}

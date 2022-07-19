@@ -1,18 +1,7 @@
 @media (max-width: 1024px) {
-   body {
-      overflow: hidden;
-   }
-
    .header {
-      .inner {
-         a {
-            z-index: 3;
-         }
-      }
-
       &__burger {
          display: block;
-         z-index: 3;
       }
 
       nav {
