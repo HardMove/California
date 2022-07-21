@@ -1,0 +1,97 @@
+.latest-offers {
+   .flex-wrapper {
+      gap: 15px;
+   }
+
+   .title {
+      margin-bottom: 13px;
+   }
+
+   .title-text {
+      max-width: 600px;
+      margin: 0 auto 50px auto;
+   }
+
+   &__flex-item {
+      .latest-offers__item {
+         box-shadow: 0px 0px 30px rgb(214, 213, 213);
+
+         span {
+            font-family: "Inter";
+            font-size: 15px;
+         }
+
+         h2 {
+            font-family: "Readex Pro";
+            font-size: 32px;
+            line-height: 38px;
+         }
+      }
+      &:nth-child(1) {
+         //Left half of cards
+         .latest-offers__item {
+            &:nth-child(1) {
+               //Laptop
+               margin-bottom: 15px;
+               padding: 0 30px;
+               span,
+               h2 {
+                  display: block;
+                  text-align: right;
+               }
+
+               h2 {
+                  margin-left: auto;
+                  max-width: 200px;
+               }
+            }
+
+            &:nth-child(2) {
+               //Watches
+               padding: 0 30px;
+               display: flex;
+               .latest-offers-text {
+                  text-align: right;
+                  vertical-align: middle;
+                  margin: 15% 0;
+                  h2 {
+                  }
+               }
+            }
+         }
+      }
+
+      &:nth-child(2) {
+         //Second card
+         .latest-offers__item {
+            padding: 57% 0% 45% 5%;
+
+            img {
+               margin-bottom: 40px;
+            }
+
+            h2,
+            span {
+               display: block;
+               text-align: center;
+            }
+         }
+      }
+
+      &:nth-child(3) {
+         //Third card
+         .latest-offers__item {
+            padding: 45% 0 48% 0;
+            h2,
+            span {
+               display: block;
+               text-align: center;
+            }
+
+            h2 {
+               margin-bottom: 30px;
+            }
+         }
+      }
+   }
+}

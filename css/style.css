@@ -105,6 +105,24 @@ img {
   padding: 0px 25px;
 }
 
+.flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h2.title {
+  font-family: "Readex Pro";
+  font-size: 42px;
+  text-align: center;
+}
+
+.title-text {
+  display: block;
+  font-family: "Readex Pro";
+  text-align: center;
+}
+
 body.hidden {
   overflow: hidden;
 }
@@ -287,6 +305,7 @@ body.hidden {
   background: #dce5e2;
   border-radius: 32px;
   position: relative;
+  margin-bottom: 90px;
 }
 .swiper .swiper-wrapper {
   padding: 50px 0;
@@ -340,6 +359,76 @@ body.hidden {
   border-radius: 200px;
   padding: 10px 40px;
   display: inline-block;
+}
+
+.latest-offers .flex-wrapper {
+  gap: 15px;
+}
+.latest-offers .title {
+  margin-bottom: 13px;
+}
+.latest-offers .title-text {
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+}
+.latest-offers__flex-item .latest-offers__item {
+  -webkit-box-shadow: 0px 0px 30px rgb(214, 213, 213);
+          box-shadow: 0px 0px 30px rgb(214, 213, 213);
+}
+.latest-offers__flex-item .latest-offers__item span {
+  font-family: "Inter";
+  font-size: 15px;
+}
+.latest-offers__flex-item .latest-offers__item h2 {
+  font-family: "Readex Pro";
+  font-size: 32px;
+  line-height: 38px;
+}
+.latest-offers__flex-item:nth-child(1) .latest-offers__item:nth-child(1) {
+  margin-bottom: 15px;
+  padding: 0 30px;
+}
+.latest-offers__flex-item:nth-child(1) .latest-offers__item:nth-child(1) span,
+.latest-offers__flex-item:nth-child(1) .latest-offers__item:nth-child(1) h2 {
+  display: block;
+  text-align: right;
+}
+.latest-offers__flex-item:nth-child(1) .latest-offers__item:nth-child(1) h2 {
+  margin-left: auto;
+  max-width: 200px;
+}
+.latest-offers__flex-item:nth-child(1) .latest-offers__item:nth-child(2) {
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.latest-offers__flex-item:nth-child(1) .latest-offers__item:nth-child(2) .latest-offers-text {
+  text-align: right;
+  vertical-align: middle;
+  margin: 15% 0;
+}
+.latest-offers__flex-item:nth-child(2) .latest-offers__item {
+  padding: 57% 0% 45% 5%;
+}
+.latest-offers__flex-item:nth-child(2) .latest-offers__item img {
+  margin-bottom: 40px;
+}
+.latest-offers__flex-item:nth-child(2) .latest-offers__item h2,
+.latest-offers__flex-item:nth-child(2) .latest-offers__item span {
+  display: block;
+  text-align: center;
+}
+.latest-offers__flex-item:nth-child(3) .latest-offers__item {
+  padding: 45% 0 48% 0;
+}
+.latest-offers__flex-item:nth-child(3) .latest-offers__item h2,
+.latest-offers__flex-item:nth-child(3) .latest-offers__item span {
+  display: block;
+  text-align: center;
+}
+.latest-offers__flex-item:nth-child(3) .latest-offers__item h2 {
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1024px) {

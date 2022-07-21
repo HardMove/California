@@ -1,4 +1,18 @@
 @import "_null";
+
+h2.title {
+   font-family: "Readex Pro";
+   font-size: 42px;
+   text-align: center;
+}
+
+.title-text {
+   display: block;
+   font-family: "Readex Pro";
+   text-align: center;
+}
+
 @import "_header";
 @import "_swiper";
+@import "_latest-offers";
 @import "_media";
