@@ -135,6 +135,55 @@
    }
 }
 
+@media (max-width: 680px) {
+   .selled-items {
+      .flex-wrapper {
+         gap: 100px;
+      }
+
+      .title-text {
+         margin-bottom: 50px;
+      }
+      .selled-items__flex-item {
+         gap: 100px;
+
+         .selled-items__text {
+            text-align: center;
+         }
+
+         &:nth-child(1) {
+            //First half
+            .selled-items__item {
+               &:nth-child(1) {
+                  //Macbook
+                  img {
+                     margin-bottom: 20px;
+                     margin-top: 0;
+                  }
+
+                  p {
+                     margin-bottom: 15px;
+                  }
+               }
+            }
+         }
+
+         &:nth-child(2) {
+            //Second half
+            .selled-items__item {
+               &:nth-child(1) {
+                  //Macbook Air
+                  img {
+                     margin-bottom: 20px;
+                     margin-top: 0;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
 @media (max-width: 425px) {
    .swiper-pagination-bullet {
       max-width: 50px;

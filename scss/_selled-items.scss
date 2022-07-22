@@ -1,0 +1,119 @@
+.selled-items {
+   .flex-wrapper {
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   &__flex-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+
+      &:nth-child(1) {
+         //First half
+         .selled-items__item {
+            &:nth-child(1) {
+               //MacBook Pro 13
+               img {
+                  margin-top: 40px;
+                  margin-bottom: 70px;
+               }
+
+               h4 {
+                  margin-bottom: 10px;
+               }
+
+               p {
+                  margin-bottom: 34px;
+               }
+            }
+
+            &:nth-child(2) {
+               //Galaxy Watch
+               img {
+                  margin-bottom: 34px;
+               }
+
+               h4 {
+                  margin-bottom: 10px;
+               }
+
+               p {
+                  margin-bottom: 17px;
+               }
+            }
+         }
+      }
+
+      &:nth-child(2) {
+         //Second half
+         .selled-items__item {
+            &:nth-child(1) {
+               //MacBook Air
+               img {
+                  margin-top: 35px;
+                  margin-bottom: 63px;
+               }
+
+               h4 {
+                  margin-bottom: 10px;
+               }
+
+               p {
+                  margin-bottom: 17px;
+               }
+            }
+
+            &:nth-child(2) {
+               //iPad
+               img {
+                  margin-bottom: 29px;
+               }
+
+               h4 {
+                  margin-bottom: 10px;
+               }
+
+               p {
+                  margin-bottom: 17px;
+               }
+            }
+         }
+      }
+   }
+
+   h2.title {
+      margin-bottom: 15px;
+   }
+
+   .title-text {
+      margin-bottom: 60px;
+   }
+
+   &__item {
+      max-width: 300px;
+
+      img {
+         margin: 0 auto;
+      }
+
+      h4 {
+         font-family: "Readex Pro";
+         font-size: 22px;
+      }
+
+      p {
+         font-family: "Inter";
+         line-height: 17px;
+         color: #4b4b4b;
+      }
+
+      span {
+         font-family: "Inter";
+         font-size: 18px;
+         line-height: 22px;
+      }
+   }
+}

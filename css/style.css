@@ -447,6 +447,90 @@ body.hidden {
   margin-bottom: 10%;
 }
 
+.selled-items .flex-wrapper {
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.selled-items__flex-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+.selled-items__flex-item:nth-child(1) .selled-items__item:nth-child(1) img {
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+.selled-items__flex-item:nth-child(1) .selled-items__item:nth-child(1) h4 {
+  margin-bottom: 10px;
+}
+.selled-items__flex-item:nth-child(1) .selled-items__item:nth-child(1) p {
+  margin-bottom: 34px;
+}
+.selled-items__flex-item:nth-child(1) .selled-items__item:nth-child(2) img {
+  margin-bottom: 34px;
+}
+.selled-items__flex-item:nth-child(1) .selled-items__item:nth-child(2) h4 {
+  margin-bottom: 10px;
+}
+.selled-items__flex-item:nth-child(1) .selled-items__item:nth-child(2) p {
+  margin-bottom: 17px;
+}
+.selled-items__flex-item:nth-child(2) .selled-items__item:nth-child(1) img {
+  margin-top: 35px;
+  margin-bottom: 63px;
+}
+.selled-items__flex-item:nth-child(2) .selled-items__item:nth-child(1) h4 {
+  margin-bottom: 10px;
+}
+.selled-items__flex-item:nth-child(2) .selled-items__item:nth-child(1) p {
+  margin-bottom: 17px;
+}
+.selled-items__flex-item:nth-child(2) .selled-items__item:nth-child(2) img {
+  margin-bottom: 29px;
+}
+.selled-items__flex-item:nth-child(2) .selled-items__item:nth-child(2) h4 {
+  margin-bottom: 10px;
+}
+.selled-items__flex-item:nth-child(2) .selled-items__item:nth-child(2) p {
+  margin-bottom: 17px;
+}
+.selled-items h2.title {
+  margin-bottom: 15px;
+}
+.selled-items .title-text {
+  margin-bottom: 60px;
+}
+.selled-items__item {
+  max-width: 300px;
+}
+.selled-items__item img {
+  margin: 0 auto;
+}
+.selled-items__item h4 {
+  font-family: "Readex Pro";
+  font-size: 22px;
+}
+.selled-items__item p {
+  font-family: "Inter";
+  line-height: 17px;
+  color: #4b4b4b;
+}
+.selled-items__item span {
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 22px;
+}
+
 @media (max-width: 1024px) {
   .header__burger {
     display: block;
@@ -555,6 +639,31 @@ body.hidden {
   }
   .latest-offers__flex-item:nth-child(2) .latest-offers__item:nth-child(2) span {
     margin-top: 20px;
+  }
+}
+@media (max-width: 680px) {
+  .selled-items .flex-wrapper {
+    gap: 100px;
+  }
+  .selled-items .title-text {
+    margin-bottom: 50px;
+  }
+  .selled-items .selled-items__flex-item {
+    gap: 100px;
+  }
+  .selled-items .selled-items__flex-item .selled-items__text {
+    text-align: center;
+  }
+  .selled-items .selled-items__flex-item:nth-child(1) .selled-items__item:nth-child(1) img {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  .selled-items .selled-items__flex-item:nth-child(1) .selled-items__item:nth-child(1) p {
+    margin-bottom: 15px;
+  }
+  .selled-items .selled-items__flex-item:nth-child(2) .selled-items__item:nth-child(1) img {
+    margin-bottom: 20px;
+    margin-top: 0;
   }
 }
 @media (max-width: 425px) {
