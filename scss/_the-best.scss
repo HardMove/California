@@ -1,6 +1,9 @@
 .the-best {
+   margin-bottom: 70px;
    .flex-wrapper {
       justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 100px;
    }
 
    .title {
@@ -9,9 +12,6 @@
 
    .title-text {
       margin-bottom: 100px;
-   }
-
-   &__flex-item {
    }
 
    &__subtitile {
