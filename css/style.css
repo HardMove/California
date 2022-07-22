@@ -123,6 +123,18 @@ h2.title {
   text-align: center;
 }
 
+.btn {
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 200px;
+  padding: 13px 50px;
+  display: inline-block;
+}
+
 body.hidden {
   overflow: hidden;
 }
@@ -273,7 +285,7 @@ body.hidden {
   background-color: white;
   max-width: 800px;
   padding-right: 150px;
-  padding-left: 9px;
+  padding-left: 20px;
   border-radius: 5px;
   position: relative;
 }
@@ -351,17 +363,6 @@ body.hidden {
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 23px;
-}
-.swiper-slide-wrapper .swiper-main-slide-text a {
-  font-family: "Inter";
-  font-size: 18px;
-  line-height: 22px;
-  text-transform: capitalize;
-  color: #000000;
-  border: 1px solid #000000;
-  border-radius: 200px;
-  padding: 10px 40px;
-  display: inline-block;
 }
 
 .latest-offers {
@@ -447,6 +448,9 @@ body.hidden {
   margin-bottom: 10%;
 }
 
+.selled-items {
+  margin-bottom: 70px;
+}
 .selled-items .flex-wrapper {
   gap: 30px;
   -ms-flex-wrap: wrap;
@@ -529,6 +533,36 @@ body.hidden {
   font-family: "Inter";
   font-size: 18px;
   line-height: 22px;
+}
+
+.the-best .flex-wrapper {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.the-best .title {
+  margin-bottom: 15px;
+}
+.the-best .title-text {
+  margin-bottom: 100px;
+}
+.the-best__subtitile {
+  font-family: "Readex Pro";
+  font-size: 13px;
+  text-align: center;
+  display: block;
+  margin-bottom: 6px;
+}
+.the-best__title {
+  font-family: "Readex Pro";
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.the-best .btn {
+  margin: 0 auto;
+  display: table;
+  margin-bottom: 30px;
+  padding: 13px 60px;
 }
 
 @media (max-width: 1024px) {

@@ -1,0 +1,38 @@
+.the-best {
+   .flex-wrapper {
+      justify-content: space-around;
+   }
+
+   .title {
+      margin-bottom: 15px;
+   }
+
+   .title-text {
+      margin-bottom: 100px;
+   }
+
+   &__flex-item {
+   }
+
+   &__subtitile {
+      font-family: "Readex Pro";
+      font-size: 13px;
+      text-align: center;
+      display: block;
+      margin-bottom: 6px;
+   }
+
+   &__title {
+      font-family: "Readex Pro";
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 30px;
+   }
+
+   .btn {
+      margin: 0 auto;
+      display: table;
+      margin-bottom: 30px;
+      padding: 13px 60px;
+   }
+}
