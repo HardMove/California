@@ -111,6 +111,13 @@ img {
   display: flex;
 }
 
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
 h2.title {
   font-family: "Readex Pro";
   font-size: 42px;
@@ -582,7 +589,7 @@ body.hidden {
 }
 .ideas .flex-wrapper {
   gap: 30px;
-  margin-bottom: 75px;
+  margin-bottom: 60px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -614,6 +621,39 @@ body.hidden {
   content: url(../img/see-all-arrow.svg);
   position: absolute;
   top: -2px;
+}
+
+.search {
+  text-align: center;
+}
+.search .title {
+  margin-bottom: 20px;
+}
+.search .flex-wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 520px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.search__input {
+  display: inline-block;
+  border: #afafaf 1px solid;
+  border-radius: 100px;
+  padding: 15px 420px 15px 45px;
+  background: transparent url(../img/search-icon.svg) no-repeat 2% 50%;
+  margin-bottom: 10px;
+}
+.search__btn {
+  font-family: "Inter";
+  color: #000000;
+  border: 1px solid #afafaf;
+  border-radius: 100px;
+  padding: 12px 20px;
 }
 
 @media (max-width: 1024px) {

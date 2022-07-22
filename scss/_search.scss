@@ -1,0 +1,36 @@
+.search {
+   text-align: center;
+
+   .inner {
+   }
+
+   .title {
+      margin-bottom: 20px;
+   }
+
+   .flex-wrapper {
+      justify-content: center;
+      gap: 5px;
+      flex-wrap: wrap;
+      max-width: 520px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+   }
+
+   &__input {
+      display: inline-block;
+      border: #afafaf 1px solid;
+      border-radius: 100px;
+      padding: 15px 420px 15px 45px;
+      background: transparent url(../img/search-icon.svg) no-repeat 2% 50%;
+      margin-bottom: 10px;
+   }
+
+   &__btn {
+      font-family: "Inter";
+      color: #000000;
+      border: 1px solid #afafaf;
+      border-radius: 100px;
+      padding: 12px 20px;
+   }
+}
