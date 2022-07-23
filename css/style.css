@@ -141,6 +141,13 @@ h2.title {
   padding: 13px 50px;
   display: inline-block;
 }
+.btn:hover {
+  color: white;
+  background-color: black;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 
 body.hidden {
   overflow: hidden;
@@ -181,7 +188,7 @@ body.hidden {
   font-size: 16px;
 }
 .header .menu a:hover {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.35);
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
@@ -221,6 +228,7 @@ body.hidden {
   border-radius: 15px;
   margin-top: 10px;
   z-index: 2;
+  border: 2px solid black;
 }
 .header .menu .sub-menu.open {
   display: inline-block;
@@ -228,8 +236,9 @@ body.hidden {
   opacity: 1;
   pointer-events: all;
 }
-.header .menu .sub-menu li:hover {
-  background-color: rgb(163, 163, 163);
+.header .menu .sub-menu li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -625,6 +634,9 @@ body.hidden {
   position: absolute;
   top: -2px;
 }
+.ideas__btn a:active {
+  color: blue;
+}
 
 .search {
   margin-bottom: 50px;
@@ -647,7 +659,7 @@ body.hidden {
   display: inline-block;
   border: #afafaf 1px solid;
   border-radius: 100px;
-  padding: 15px 40% 15px 45px;
+  padding: 15px 40% 15px 50px;
   background: transparent url(../img/search-icon.svg) no-repeat 2% 50%;
   margin-bottom: 10px;
 }
@@ -657,6 +669,13 @@ body.hidden {
   border: 1px solid #afafaf;
   border-radius: 100px;
   padding: 12px 20px;
+}
+.search__btn:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .never-miss {
@@ -686,9 +705,10 @@ body.hidden {
   padding-left: 30px;
   border: #000 1px solid;
   border-radius: 100px;
+  background-color: white;
 }
 .never-miss__form .never-miss__input {
-  background-color: #dce5e2;
+  background-color: white;
   padding-right: 100px;
 }
 .never-miss__form .never-miss__search-btn {
@@ -698,6 +718,12 @@ body.hidden {
   color: white;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+.never-miss__form .never-miss__search-btn:hover {
+  color: rgb(129, 71, 184);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .footer {
@@ -728,6 +754,12 @@ body.hidden {
   font-size: 17px;
   color: #000000;
   margin-bottom: 15px;
+}
+.footer__link:hover {
+  color: #b6b6b6;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .footer .flex-wrapper {
   -ms-flex-pack: distribute;

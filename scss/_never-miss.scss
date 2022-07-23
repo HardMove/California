@@ -26,9 +26,10 @@
       padding-left: 30px;
       border: #000 1px solid;
       border-radius: 100px;
+      background-color: white;
 
       .never-miss__input {
-         background-color: #dce5e2;
+         background-color: white;
          padding-right: 100px;
       }
 
@@ -39,6 +40,11 @@
          color: white;
          border-top-left-radius: 0;
          border-bottom-left-radius: 0;
+
+         &:hover {
+            color: rgb(129, 71, 184);
+            transition: all 0.5s ease;
+         }
       }
    }
 }

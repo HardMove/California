@@ -17,7 +17,7 @@
       display: inline-block;
       border: #afafaf 1px solid;
       border-radius: 100px;
-      padding: 15px 40% 15px 45px;
+      padding: 15px 40% 15px 50px;
       background: transparent url(../img/search-icon.svg) no-repeat 2% 50%;
       margin-bottom: 10px;
    }
@@ -28,5 +28,11 @@
       border: 1px solid #afafaf;
       border-radius: 100px;
       padding: 12px 20px;
+
+      &:hover {
+         background-color: black;
+         color: white;
+         transition: all 0.3s ease;
+      }
    }
 }

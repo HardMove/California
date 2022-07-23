@@ -37,6 +37,10 @@
             position: absolute;
             top: -2px;
          }
+
+         &:active {
+            color: blue;
+         }
       }
    }
 }

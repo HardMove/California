@@ -20,4 +20,10 @@ h2.title {
    border-radius: 200px;
    padding: 13px 50px;
    display: inline-block;
+
+   &:hover {
+      color: white;
+      background-color: black;
+      transition: all 0.3s ease;
+   }
 }

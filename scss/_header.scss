@@ -33,7 +33,7 @@ body.hidden {
          font-size: 16px;
 
          &:hover {
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.35);
             transition: 0.4s;
          }
       }
@@ -67,6 +67,7 @@ body.hidden {
          border-radius: 15px;
          margin-top: 10px;
          z-index: 2;
+         border: 2px solid black;
          &.open {
             display: inline-block;
             max-height: 300px;
@@ -74,8 +75,9 @@ body.hidden {
             pointer-events: all;
          }
 
-         li:hover {
-            background-color: rgb(163, 163, 163);
+         li a:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
             transition: all 0.5s;
             border-radius: 13px;
          }
