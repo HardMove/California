@@ -1,0 +1,43 @@
+.never-miss {
+   text-align: center;
+   .inner {
+      background-color: #dce5e2;
+      max-width: 935px;
+      border-radius: 10px;
+      padding: 40px 20px;
+   }
+
+   .title {
+      margin-bottom: 10px;
+   }
+
+   .title-text {
+      margin-bottom: 20px;
+   }
+
+   &__img {
+      margin: 0 auto;
+      margin-bottom: 10px;
+   }
+
+   &__form {
+      display: inline-flex;
+      padding-left: 30px;
+      border: #000 1px solid;
+      border-radius: 100px;
+
+      .never-miss__input {
+         background-color: #dce5e2;
+         padding-right: 100px;
+      }
+
+      .never-miss__search-btn {
+         padding: 15px 40px 15px 40px;
+         border-radius: 100px;
+         background-color: black;
+         color: white;
+         border-top-left-radius: 0;
+         border-bottom-left-radius: 0;
+      }
+   }
+}

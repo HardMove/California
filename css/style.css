@@ -627,6 +627,7 @@ body.hidden {
 }
 
 .search {
+  margin-bottom: 50px;
   text-align: center;
 }
 .search .title {
@@ -641,7 +642,6 @@ body.hidden {
       flex-wrap: wrap;
   max-width: 530px;
   margin: 0 auto;
-  margin-bottom: 30px;
 }
 .search__input {
   display: inline-block;
@@ -657,6 +657,46 @@ body.hidden {
   border: 1px solid #afafaf;
   border-radius: 100px;
   padding: 12px 20px;
+}
+
+.never-miss {
+  text-align: center;
+}
+.never-miss .inner {
+  background-color: #dce5e2;
+  max-width: 935px;
+  border-radius: 10px;
+  padding: 40px 20px;
+}
+.never-miss .title {
+  margin-bottom: 10px;
+}
+.never-miss .title-text {
+  margin-bottom: 20px;
+}
+.never-miss__img {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.never-miss__form {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-left: 30px;
+  border: #000 1px solid;
+  border-radius: 100px;
+}
+.never-miss__form .never-miss__input {
+  background-color: #dce5e2;
+  padding-right: 100px;
+}
+.never-miss__form .never-miss__search-btn {
+  padding: 15px 40px 15px 40px;
+  border-radius: 100px;
+  background-color: black;
+  color: white;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 @media (max-width: 1024px) {
@@ -719,6 +759,11 @@ body.hidden {
   }
   .swiper-slide-wrapper img {
     max-width: 45%;
+  }
+}
+@media (max-width: 970px) {
+  .never-miss .inner {
+    max-width: 90%;
   }
 }
 @media (max-width: 768px) {
@@ -785,6 +830,9 @@ body.hidden {
     height: -moz-fit-content;
     height: fit-content;
   }
+  .never-miss__form .never-miss__input {
+    padding: 0;
+  }
 }
 @media (max-width: 680px) {
   .selled-items .flex-wrapper {
@@ -811,7 +859,7 @@ body.hidden {
     margin-top: 0;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 428px) {
   .swiper-pagination-bullet {
     max-width: 50px;
   }
@@ -830,5 +878,14 @@ body.hidden {
   }
   .search__input {
     padding-right: 20%;
+  }
+  .never-miss__form .never-miss__search-btn {
+    padding: 10px;
+  }
+  .never-miss__form .never-miss__input {
+    width: 144px;
+  }
+  .never-miss .inner {
+    padding: 20px;
   }
 }
