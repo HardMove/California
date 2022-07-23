@@ -661,6 +661,7 @@ body.hidden {
 
 .never-miss {
   text-align: center;
+  margin-bottom: 20px;
 }
 .never-miss .inner {
   background-color: #dce5e2;
@@ -697,6 +698,43 @@ body.hidden {
   color: white;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.footer {
+  border-top: 1px #dce5e2 solid;
+  padding-top: 40px;
+}
+.footer__flex-item:first-child {
+  max-width: 300px;
+}
+.footer__logo {
+  margin-bottom: 10px;
+}
+.footer__text {
+  font-family: "Inter";
+  font-size: 16px;
+}
+.footer__title {
+  font-family: "Readex Pro";
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.footer__link {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Inter";
+  font-size: 17px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.footer .flex-wrapper {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 
 @media (max-width: 1024px) {

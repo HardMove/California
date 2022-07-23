@@ -1,0 +1,39 @@
+.footer {
+   border-top: 1px #dce5e2 solid;
+   padding-top: 40px;
+   &__flex-item {
+      &:first-child {
+         max-width: 300px;
+      }
+   }
+
+   &__logo {
+      margin-bottom: 10px;
+   }
+
+   &__text {
+      font-family: "Inter";
+      font-size: 16px;
+   }
+
+   &__title {
+      font-family: "Readex Pro";
+      font-size: 22px;
+      margin-bottom: 20px;
+   }
+
+   &__link {
+      display: block;
+      width: fit-content;
+      font-family: "Inter";
+      font-size: 17px;
+      color: #000000;
+      margin-bottom: 15px;
+   }
+
+   .flex-wrapper {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+   }
+}
