@@ -90,7 +90,7 @@
 
 @media (max-width: 614px) {
    h2.title {
-      font-size: 36px;
+      font-size: 33px;
    }
    .latest-offers__flex-item {
       .latest-offers__item {
@@ -130,6 +130,20 @@
                   margin-top: 20px;
                }
             }
+         }
+      }
+   }
+
+   .search {
+      .flex-wrapper {
+         flex-wrap: nowrap;
+         overflow: auto;
+         justify-content: flex-start;
+         align-items: center;
+
+         .search__btn {
+            min-width: 100px;
+            height: fit-content;
          }
       }
    }
@@ -203,6 +217,16 @@
    .ideas {
       .ideas__text {
          font-size: 20px;
+      }
+
+      .flex-wrapper {
+         margin-bottom: 30px;
+      }
+   }
+
+   .search {
+      &__input {
+         padding-right: 20%;
       }
    }
 }

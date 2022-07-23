@@ -1,9 +1,5 @@
 .search {
    text-align: center;
-
-   .inner {
-   }
-
    .title {
       margin-bottom: 20px;
    }
@@ -12,7 +8,7 @@
       justify-content: center;
       gap: 5px;
       flex-wrap: wrap;
-      max-width: 520px;
+      max-width: 530px;
       margin: 0 auto;
       margin-bottom: 30px;
    }
@@ -21,7 +17,7 @@
       display: inline-block;
       border: #afafaf 1px solid;
       border-radius: 100px;
-      padding: 15px 420px 15px 45px;
+      padding: 15px 40% 15px 45px;
       background: transparent url(../img/search-icon.svg) no-repeat 2% 50%;
       margin-bottom: 10px;
    }
