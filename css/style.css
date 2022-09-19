@@ -827,9 +827,6 @@ body.hidden {
     font-size: 20px;
     line-height: 25px;
   }
-  .swiper-slide-wrapper img {
-    max-width: 45%;
-  }
 }
 @media (max-width: 970px) {
   .never-miss .inner {
